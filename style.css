@@ -67,7 +67,7 @@ h1{
     background-color: rgb(255, 255, 255);
     position: absolute;
     left: 50vw;
-    top: 35vh;
+    top: 38vh;
     z-index: 2;
     transform: translate(-50%, -50%);
     border-radius: 20px;
@@ -148,7 +148,8 @@ h1{
 
     .info{
         width: 70vw;
-        height: 350px;
+        height: 300px;
+        transform: translate(-50%, -50%) scale(0.9);
     }
 
     .search{
@@ -165,6 +166,10 @@ h1{
 
     .banner{
         padding: 3%;
+    }
+
+    .banner h1{
+        transform: scale(0.8);
     }
 
     .info-elements:not(:first-child){
