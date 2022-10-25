@@ -142,3 +142,48 @@ h1{
     padding: 10px;
     cursor: pointer;
 }
+
+/* Media query */
+@media screen and (max-width: 900px) {
+
+    .info{
+        width: 70vw;
+        height: 350px;
+    }
+
+    .search{
+        margin: 3%;
+    }
+
+    .search button{
+        width: 10vw;
+    }
+
+    .search input{
+        width: 50vw;
+    }
+
+    .banner{
+        padding: 3%;
+    }
+
+    .info-elements:not(:first-child){
+        border-left: 0;
+        padding: 10px 0;
+        border-top: 2px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .info-elements{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info-elements div{
+        font-size: 16px;
+    }
+
+    .api-info-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
