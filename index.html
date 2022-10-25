@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+    integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+     integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+     crossorigin=""></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="error">
+        <span>IP address is Invalid or unreachable.</span>
+        <button id="errorOK">OK</button>
+    </div>
+    <div class="info">
+        <div class="api-info-container">
+            <div class="info-elements">
+                <span>IP Address</span>
+                <div id="ip-address">
+                    -
+                </div> 
+            </div>
+            <div class="info-elements">
+                <span>Location</span>
+                <div id="location">
+                    -
+                </div> 
+            </div>
+            <div class="info-elements">
+                <span>Timezone</span>
+                <div id="timezone">
+                    -
+                </div> 
+            </div>
+            <div class="info-elements">
+                <span>ISP</span>
+                <div id="isp">
+                    -
+                </div> 
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="banner">
+            <h1>IP Address Tracker</h1>
+            <div class="search">
+                <input type="text" name="ip-address" placeholder="Search for any IP Address" id="IP-search">
+                <button id="search-btn"><img src="./ip-address-tracker-master/images/icon-arrow.svg" alt=""></button>
+            </div>
+        </div>
+        <div id="map"></div>
+    </div>
+    <script type="module" src="./app.js"></script>
+</body>
+</html>
